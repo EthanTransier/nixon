@@ -9,4 +9,11 @@ function closeVoted() {
     document.getElementById('nixonVotedID').classList.remove('active');
 }
 
-const randomOrder = [1, 2, 3, 4, 5]
+let randomOrder = [];
+
+for(let i = 0; i < randomOrder.length + 1; i++){
+    let randomNum = Math.floor(Math.random() * 5)
+    if(randomOrder.includes(randomNum)){
+        
+    }
+}
