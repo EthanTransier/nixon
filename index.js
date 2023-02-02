@@ -59,6 +59,15 @@ function govern0(){
     }
 }
 
+var waiting = 0;
+
 function govern1(){
-    
+    console.log('start event 1');
+    document.getElementById('mainContentID').style.cursor = "wait";
+    setTimeout(endWait1, 20000);
+}
+
+function endWait1(){
+    console.log('end wait');
+    document.getElementById('mainContentID').style.cursor = "";
 }
