@@ -71,3 +71,7 @@ function endWait1(){
     console.log('end wait');
     document.getElementById('mainContentID').style.cursor = "";
 }
+
+function onpageload(){
+    document.getElementById('nixonVotedID').style.width = "750px"
+}
