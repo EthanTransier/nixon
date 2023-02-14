@@ -12,8 +12,8 @@ function closeVoted() {
 let randomOrder = [];
 let randomNum = 0;
 
-while(randomOrder.length < 5){
-    randomNum = Math.floor(Math.random() * 5)
+while(randomOrder.length < 2){
+    randomNum = Math.floor(Math.random() * 2)
     if(!randomOrder.includes(randomNum)){
         randomOrder.push(randomNum)
     }
@@ -74,4 +74,10 @@ function endWait1(){
 
 function onpageload(){
     document.getElementById('nixonVotedID').style.width = "750px"
+}
+
+document.getElementById('flagID').addEventListener("contextmenu", screech)
+
+function screech(){
+
 }
